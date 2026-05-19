@@ -1,11 +1,11 @@
 // Полный список товаров (6 штук)
 const products = [
-    { id: 1, name: "Модель «Ромашка»", price: 2500, image: "https://placehold.co/600x600/F5F5F5/1A1A1A?text=+&font=montserrat" },
-    { id: 2, name: "Модель «Лаванда»", price: 3200, image: "https://placehold.co/600x600/F5F5F5/1A1A1A?text=+&font=montserrat" },
-    { id: 3, name: "Модель «Закат»", price: 2800, image: "https://placehold.co/600x600/F5F5F5/1A1A1A?text=+&font=montserrat" },
-    { id: 4, name: "Модель «Ночь»", price: 3500, image: "https://placehold.co/600x600/F5F5F5/1A1A1A?text=+&font=montserrat" },
-    { id: 5, name: "Модель «Мятная свежесть»", price: 3000, image: "https://placehold.co/600x600/F5F5F5/1A1A1A?text=+&font=montserrat" },
-    { id: 6, name: "Модель «Радужное настроение»", price: 3900, image: "https://placehold.co/600x600/F5F5F5/1A1A1A?text=+&font=montserrat" }
+    { id: 1, name: "Модель «Ромашка»", price: 2500, image: "images/chamomile.jpg" },
+    { id: 2, name: "Модель «Лаванда»", price: 3200, image: "images/lavender.jpg" },
+    { id: 3, name: "Модель «Закат»", price: 2800, image: "images/zakat.jpg" },
+    { id: 4, name: "Модель «Ночь»", price: 3500, image: "images/night.jpg" },
+    { id: 5, name: "Модель «Мятная свежесть»", price: 3000, image: "images/mint.jpg" },
+    { id: 6, name: "Модель «Радужное настроение»", price: 3900, image: "images/good_mood.jpg" }
 ];
 
 // Показать все товары в каталоге
