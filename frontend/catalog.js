@@ -42,8 +42,29 @@ function addToCart(productId) {
         cart.push({ ...product, quantity: 1 });
     }
     saveCart(cart);
-    alert(`${product.name} добавлена в корзину`);
+    showToast(`${product.name} добавлена в корзину`);
 }
 
+function showToast(message) {
+    let container = document.getElementById('toast-container');
+    if (!container) {
+        
+        container = document.createElement('div');
+        container.id = 'toast-container';
+        container.className = 'toast-container';
+        document.body.appendChild(container);
+    }
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.textContent = message;
+    container.appendChild(toast);
+    // Анимация появления
+    setTimeout(() => toast.classList.add('show'), 10);
+    // Автоматическое удаление через 2.5 секунды
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+    }, 2500);
+}
 // Запуск
 showCatalog();
